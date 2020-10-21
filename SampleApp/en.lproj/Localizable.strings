@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  SampleApp
+
+  Created by Aki Wang on 2020/10/21.
+  
+*/
+/*
+ 繁體中文
+ */
+"LANGUAGE" = "en";
+
+"OK" = "OK";
+"CANCEL" = "CANCEL";
+
+"MAIN" = "Main";
