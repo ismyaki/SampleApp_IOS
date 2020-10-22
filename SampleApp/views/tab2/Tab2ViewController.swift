@@ -1,14 +1,13 @@
 //
-//  MainViewController.swift
+//  Tab2ViewController.swift
 //  SampleApp
 //
-//  Created by Aki Wang on 2020/10/21.
+//  Created by Aki Wang on 2020/10/22.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
-    private let TAG = "MainViewController"
+class Tab2ViewController: BaseViewController {
     
     @IBOutlet weak var btnGoToSecond: UIButton!
     
@@ -42,10 +41,12 @@ class MainViewController: UIViewController {
         
     }
     
+
     @IBAction func onClickGoToSecond(){
         if let next = storyboard?.instantiateViewController(withClass: SecondViewController.self) {
             next.modalPresentationStyle = .fullScreen
             self.present(next, animated: true, completion: nil)
         }
     }
+
 }

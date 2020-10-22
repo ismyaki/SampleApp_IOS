@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: BaseViewController {
     
     @IBOutlet weak var btnBack: UIButton!
     

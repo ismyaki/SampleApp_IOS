@@ -12,7 +12,6 @@
 		F1E0A647253FD49C007BCD19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A646253FD49C007BCD19 /* AppDelegate.swift */; };
 		F1E0A649253FD49C007BCD19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A648253FD49C007BCD19 /* SceneDelegate.swift */; };
 		F1E0A64B253FD49C007BCD19 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A64A253FD49C007BCD19 /* SplashViewController.swift */; };
-		F1E0A64E253FD49C007BCD19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E0A64C253FD49C007BCD19 /* Main.storyboard */; };
 		F1E0A651253FD49C007BCD19 /* SampleApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A64F253FD49C007BCD19 /* SampleApp.xcdatamodeld */; };
 		F1E0A653253FD4A2007BCD19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E0A652253FD4A2007BCD19 /* Assets.xcassets */; };
 		F1E0A656253FD4A2007BCD19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E0A654253FD4A2007BCD19 /* LaunchScreen.storyboard */; };
@@ -36,10 +35,20 @@
 		F1E0A6C0253FDC5A007BCD19 /* CoreDataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A6BE253FDC5A007BCD19 /* CoreDataExt.swift */; };
 		F1E0A6C1253FDC5A007BCD19 /* BikeStationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A6BF253FDC5A007BCD19 /* BikeStationManager.swift */; };
 		F1E0A6CC253FE3DD007BCD19 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E0A6CB253FE3DD007BCD19 /* Splash.storyboard */; };
-		F1E0A6D1253FE450007BCD19 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A6D0253FE450007BCD19 /* MainViewController.swift */; };
 		F1E0A6DE253FEAD1007BCD19 /* AlertTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1E0A6DC253FEAD1007BCD19 /* AlertTextViewController.xib */; };
 		F1E0A6DF253FEAD1007BCD19 /* AlertTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A6DD253FEAD1007BCD19 /* AlertTextViewController.swift */; };
 		F1E0A6FD253FEDFA007BCD19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F1E0A6FF253FEDFA007BCD19 /* Localizable.strings */; };
+		F1F8941025412B960032ACAC /* Tab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F8940F25412B960032ACAC /* Tab.storyboard */; };
+		F1F8941525412C790032ACAC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F8941425412C790032ACAC /* TabBarController.swift */; };
+		F1F8941E254132280032ACAC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F8941D254132280032ACAC /* Login.storyboard */; };
+		F1F89423254132480032ACAC /* Tab1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F89422254132480032ACAC /* Tab1.storyboard */; };
+		F1F89428254132690032ACAC /* Tab2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F89427254132690032ACAC /* Tab2.storyboard */; };
+		F1F89431254133480032ACAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F89430254133480032ACAC /* LoginViewController.swift */; };
+		F1F894392541335E0032ACAC /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F894382541335E0032ACAC /* StationViewController.swift */; };
+		F1F894412541336A0032ACAC /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F894402541336A0032ACAC /* Tab2ViewController.swift */; };
+		F1F89446254135A80032ACAC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F89445254135A80032ACAC /* BaseViewController.swift */; };
+		F1F894532541872A0032ACAC /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F89452254187290032ACAC /* StationTableViewCell.swift */; };
+		F1FCBE8225419E8500415BB2 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = F1FCBE8125419E8500415BB2 /* .gitattributes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +76,6 @@
 		F1E0A646253FD49C007BCD19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E0A648253FD49C007BCD19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F1E0A64A253FD49C007BCD19 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		F1E0A64D253FD49C007BCD19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1E0A650253FD49C007BCD19 /* SampleApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SampleApp.xcdatamodel; sourceTree = "<group>"; };
 		F1E0A652253FD4A2007BCD19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E0A655253FD4A2007BCD19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,10 +101,20 @@
 		F1E0A6BE253FDC5A007BCD19 /* CoreDataExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataExt.swift; sourceTree = "<group>"; };
 		F1E0A6BF253FDC5A007BCD19 /* BikeStationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BikeStationManager.swift; sourceTree = "<group>"; };
 		F1E0A6CB253FE3DD007BCD19 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
-		F1E0A6D0253FE450007BCD19 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F1E0A6DC253FEAD1007BCD19 /* AlertTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertTextViewController.xib; sourceTree = "<group>"; };
 		F1E0A6DD253FEAD1007BCD19 /* AlertTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTextViewController.swift; sourceTree = "<group>"; };
 		F1E0A6FE253FEDFA007BCD19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F1F8940F25412B960032ACAC /* Tab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab.storyboard; sourceTree = "<group>"; };
+		F1F8941425412C790032ACAC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F1F8941D254132280032ACAC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F1F89422254132480032ACAC /* Tab1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab1.storyboard; sourceTree = "<group>"; };
+		F1F89427254132690032ACAC /* Tab2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab2.storyboard; sourceTree = "<group>"; };
+		F1F89430254133480032ACAC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F1F894382541335E0032ACAC /* StationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
+		F1F894402541336A0032ACAC /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		F1F89445254135A80032ACAC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F1F89452254187290032ACAC /* StationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
+		F1FCBE8125419E8500415BB2 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +148,7 @@
 		F1E0A63A253FD49B007BCD19 = {
 			isa = PBXGroup;
 			children = (
+				F1FCBE8125419E8500415BB2 /* .gitattributes */,
 				F1E0A645253FD49B007BCD19 /* SampleApp */,
 				F1E0A65F253FD4A4007BCD19 /* SampleAppTests */,
 				F1E0A66A253FD4A4007BCD19 /* SampleAppUITests */,
@@ -204,7 +223,10 @@
 			children = (
 				F1E0A654253FD4A2007BCD19 /* LaunchScreen.storyboard */,
 				F1E0A6CB253FE3DD007BCD19 /* Splash.storyboard */,
-				F1E0A64C253FD49C007BCD19 /* Main.storyboard */,
+				F1F8941D254132280032ACAC /* Login.storyboard */,
+				F1F8940F25412B960032ACAC /* Tab.storyboard */,
+				F1F89422254132480032ACAC /* Tab1.storyboard */,
+				F1F89427254132690032ACAC /* Tab2.storyboard */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -212,9 +234,12 @@
 		F1E0A691253FD5C3007BCD19 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				F1F89445254135A80032ACAC /* BaseViewController.swift */,
 				F1E0A64A253FD49C007BCD19 /* SplashViewController.swift */,
-				F1E0A6D0253FE450007BCD19 /* MainViewController.swift */,
-				F162E285253FFDE40005A091 /* SecondViewController.swift */,
+				F1F89430254133480032ACAC /* LoginViewController.swift */,
+				F1F8941425412C790032ACAC /* TabBarController.swift */,
+				F1F8941C2541315A0032ACAC /* tab1 */,
+				F1F8942F254133060032ACAC /* tab2 */,
 				F1E0A6DB253FE99E007BCD19 /* alert */,
 			);
 			path = views;
@@ -255,6 +280,24 @@
 				F1E0A6DC253FEAD1007BCD19 /* AlertTextViewController.xib */,
 			);
 			path = alert;
+			sourceTree = "<group>";
+		};
+		F1F8941C2541315A0032ACAC /* tab1 */ = {
+			isa = PBXGroup;
+			children = (
+				F1F894382541335E0032ACAC /* StationViewController.swift */,
+				F1F89452254187290032ACAC /* StationTableViewCell.swift */,
+			);
+			path = tab1;
+			sourceTree = "<group>";
+		};
+		F1F8942F254133060032ACAC /* tab2 */ = {
+			isa = PBXGroup;
+			children = (
+				F1F894402541336A0032ACAC /* Tab2ViewController.swift */,
+				F162E285253FFDE40005A091 /* SecondViewController.swift */,
+			);
+			path = tab2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,11 +414,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F89423254132480032ACAC /* Tab1.storyboard in Resources */,
+				F1F8941E254132280032ACAC /* Login.storyboard in Resources */,
 				F1E0A656253FD4A2007BCD19 /* LaunchScreen.storyboard in Resources */,
 				F1E0A6FD253FEDFA007BCD19 /* Localizable.strings in Resources */,
+				F1F8941025412B960032ACAC /* Tab.storyboard in Resources */,
+				F1FCBE8225419E8500415BB2 /* .gitattributes in Resources */,
+				F1F89428254132690032ACAC /* Tab2.storyboard in Resources */,
 				F1E0A6DE253FEAD1007BCD19 /* AlertTextViewController.xib in Resources */,
 				F1E0A653253FD4A2007BCD19 /* Assets.xcassets in Resources */,
-				F1E0A64E253FD49C007BCD19 /* Main.storyboard in Resources */,
 				F1E0A6CC253FE3DD007BCD19 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,15 +450,20 @@
 			files = (
 				F162E28B253FFE580005A091 /* Localizable.swift in Sources */,
 				F1E0A6B4253FDB94007BCD19 /* UIButtonExt.swift in Sources */,
+				F1F894532541872A0032ACAC /* StationTableViewCell.swift in Sources */,
 				F1E0A6B6253FDB94007BCD19 /* StringExt.swift in Sources */,
 				F1E0A6B9253FDB94007BCD19 /* UIViewControllerExt.swift in Sources */,
 				F1E0A6A2253FD6C3007BCD19 /* ApiTool.swift in Sources */,
+				F1F89446254135A80032ACAC /* BaseViewController.swift in Sources */,
+				F1F8941525412C790032ACAC /* TabBarController.swift in Sources */,
 				F1E0A6C0253FDC5A007BCD19 /* CoreDataExt.swift in Sources */,
 				F1E0A69F253FD6C3007BCD19 /* LoginModel.swift in Sources */,
+				F1F894392541335E0032ACAC /* StationViewController.swift in Sources */,
 				F1E0A6A0253FD6C3007BCD19 /* TapipeiYouBikeStationModel.swift in Sources */,
 				F1E0A64B253FD49C007BCD19 /* SplashViewController.swift in Sources */,
 				F1E0A651253FD49C007BCD19 /* SampleApp.xcdatamodeld in Sources */,
 				F1E0A6B2253FDB94007BCD19 /* UserDefaultsManager.swift in Sources */,
+				F1F89431254133480032ACAC /* LoginViewController.swift in Sources */,
 				F1E0A647253FD49C007BCD19 /* AppDelegate.swift in Sources */,
 				F1E0A6BA253FDB94007BCD19 /* DateExt.swift in Sources */,
 				F1E0A6B8253FDB94007BCD19 /* Tools.swift in Sources */,
@@ -422,7 +474,7 @@
 				F1E0A6C1253FDC5A007BCD19 /* BikeStationManager.swift in Sources */,
 				F162E286253FFDE40005A091 /* SecondViewController.swift in Sources */,
 				F1E0A649253FD49C007BCD19 /* SceneDelegate.swift in Sources */,
-				F1E0A6D1253FE450007BCD19 /* MainViewController.swift in Sources */,
+				F1F894412541336A0032ACAC /* Tab2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,14 +510,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F1E0A64C253FD49C007BCD19 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1E0A64D253FD49C007BCD19 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F1E0A654253FD4A2007BCD19 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -56,6 +56,14 @@ extension UIColor {
     static let def_btn2_border_touch = "def_btn2_border_touch".toColorByNamed()
     /** Color[222222]  */
     static let def_btn2_txt_touch = "def_btn2_txt_touch".toColorByNamed()
+    /** Color[0084ff] */
+    static let def_tab_selected = "def_tab_selected".toColorByNamed()
+    /** Color[d4e2f4] */
+    static let def_tab_unselected = "def_tab_unselected".toColorByNamed()
+    /** Color[f5faff] */
+    static let def_tab_bg_selected = "def_tab_bg_selected".toColorByNamed()
+    /** Color[FFFFFF] */
+    static let def_tab_bg_unselected = "def_tab_bg_unselected".toColorByNamed()
     
 }
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SplashViewController: UIViewController {
+class SplashViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +28,21 @@ class SplashViewController: UIViewController {
                     }
                 }
             }
-            // Sync api finish, go to MainViewController or LoginViewController ...
+            // Sync api finish, go to TabBarController or LoginViewController ...
             DispatchQueue.main.async {
-                let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-                if let next = storyboard.instantiateViewController(withClass: MainViewController.self) {
-                    next.modalPresentationStyle = .fullScreen
-                    self.present(next, animated: false)
+                self.dismiss(animated: false)
+                if UserDefaultsManager.getInstance().isLogin() {
+                    let storyboard = UIStoryboard.init(name: "Tab", bundle: nil)
+                    if let next = storyboard.instantiateViewController(withClass: TabBarController.self) {
+                        next.modalPresentationStyle = .fullScreen
+                        self.present(next, animated: false)
+                    }
+                } else {
+                    let storyboard = UIStoryboard.init(name: "Login", bundle: nil)
+                    if let next = storyboard.instantiateViewController(withClass: LoginViewController.self) {
+                        next.modalPresentationStyle = .fullScreen
+                        self.present(next, animated: false)
+                    }
                 }
             }
         }
