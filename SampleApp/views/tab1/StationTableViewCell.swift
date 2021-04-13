@@ -7,10 +7,19 @@
 
 import UIKit
 
+protocol StationTableViewCellDelegate{
+    func onClickCopy(_ view: UIView, selectEntity: BikeStationEntity)
+    func onClickDel(_ view: UIView, selectEntity: BikeStationEntity)
+}
+
 class StationTableViewCell: UITableViewCell {
+    
+    var entity: BikeStationEntity? = nil
     
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var lbCount: UILabel!
+    
+    var delegate: StationTableViewCellDelegate? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +30,7 @@ class StationTableViewCell: UITableViewCell {
     }
     
     func setValue(entity: BikeStationEntity){
+        self.entity = entity
         lbName.text = entity.sna
         lbCount.text = "(\(entity.sbi)/\(entity.tot))"
     }
@@ -29,5 +39,17 @@ class StationTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
+    }
+    
+    @IBAction func onClickCopy(_ sender: UIButton) {
+        if let entity = entity {
+            delegate?.onClickCopy(sender, selectEntity: entity)
+        }
+    }
+    
+    @IBAction func onClickDel(_ sender: UIButton) {
+        if let entity = entity {
+            delegate?.onClickDel(sender, selectEntity: entity)
+        }
     }
 }

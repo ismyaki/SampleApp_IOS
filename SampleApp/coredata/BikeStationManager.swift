@@ -57,6 +57,20 @@ class BikeStationManager: NSObject{
         return results
     }
     
+    func insert(sno: String, sna: String, lat: Double, lng: Double, sbi: Int, tot: Int) -> BikeStationEntity? {
+        var result = fetch(id: sno)
+        if result == nil { result = newEntity() }
+        if let entity = result {
+            entity.sno = sno
+            entity.sna = sna
+            entity.lat = lat
+            entity.lng = lng
+            entity.sbi = sbi.toInt64()
+            entity.tot = tot.toInt64()
+        }
+        return result
+    }
+    
     func remove(entity: BikeStationEntity) {
         backgroundContext.delete(entity)
     }
@@ -71,6 +85,18 @@ class BikeStationManager: NSObject{
         remove(arr: fetchAll())
     }
     
+    func fetchAllInLive() -> NSFetchedResultsController<BikeStationEntity> {
+        let request: NSFetchRequest<BikeStationEntity> = BikeStationEntity.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(key: "sno", ascending: false)]
+        let controller = NSFetchedResultsController(fetchRequest: request, managedObjectContext: backgroundContext, sectionNameKeyPath: nil, cacheName: nil)
+        do {
+            try controller.performFetch()
+        } catch {
+            fatalError("Failed to fetch entities: \(error)")
+        }
+        return controller
+    }
+    
     func fetchAll() -> [BikeStationEntity] {
         let request: NSFetchRequest<BikeStationEntity> = BikeStationEntity.fetchRequest()
         request.sortDescriptors = [NSSortDescriptor(key: "sno", ascending: false)]
@@ -83,6 +109,19 @@ class BikeStationManager: NSObject{
         request.predicate = NSPredicate(format: "sno = %@", id)
         let results = try? backgroundContext.fetchByPerformAndWait(request)
         return results?.count ?? [BikeStationEntity]().count > 0 ? results?[0] : nil
+    }
+    
+    func fetchActiveInLive() -> NSFetchedResultsController<BikeStationEntity> {
+        let request: NSFetchRequest<BikeStationEntity> = BikeStationEntity.fetchRequest()
+        request.predicate = NSPredicate(format: "act = 1")
+        request.sortDescriptors = [NSSortDescriptor(key: "sno", ascending: false)]
+        let controller = NSFetchedResultsController(fetchRequest: request, managedObjectContext: backgroundContext, sectionNameKeyPath: nil, cacheName: nil)
+        do {
+            try controller.performFetch()
+        } catch {
+            fatalError("Failed to fetch entities: \(error)")
+        }
+        return controller
     }
     
     func fetchActive() -> [BikeStationEntity] {

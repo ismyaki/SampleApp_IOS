@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -50,20 +50,38 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(10/100)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKG-Jg-lg8" userLabel="lbCount">
-                                                    <rect key="frame" x="328" y="13" width="63" height="21"/>
+                                                    <rect key="frame" x="245" y="13" width="63" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HP6-s0-dFL">
+                                                    <rect key="frame" x="313" y="8.5" width="52" height="30"/>
+                                                    <state key="normal" title="[COPY]"/>
+                                                    <connections>
+                                                        <action selector="onClickCopy:" destination="TKh-9d-7Ji" eventType="touchUpInside" id="K4D-Vj-yVI"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vb-UA-K5f">
+                                                    <rect key="frame" x="370" y="8.5" width="39" height="30"/>
+                                                    <state key="normal" title="[DEL]"/>
+                                                    <connections>
+                                                        <action selector="onClickDel:" destination="TKh-9d-7Ji" eventType="touchUpInside" id="nsX-Ly-vth"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="61M-JH-nRy" firstAttribute="top" secondItem="Wxl-MO-tqN" secondAttribute="top" constant="3" id="4xc-Zr-iBR"/>
                                                 <constraint firstItem="kKG-Jg-lg8" firstAttribute="centerY" secondItem="Wxl-MO-tqN" secondAttribute="centerY" id="CQr-uP-MmB"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="kKG-Jg-lg8" secondAttribute="trailing" constant="3" id="I8Y-Ha-QjJ"/>
                                                 <constraint firstAttribute="bottom" secondItem="61M-JH-nRy" secondAttribute="bottom" constant="3" id="LI0-aL-Zlm"/>
+                                                <constraint firstItem="4vb-UA-K5f" firstAttribute="leading" secondItem="HP6-s0-dFL" secondAttribute="trailing" constant="5" id="OTO-mZ-gar"/>
+                                                <constraint firstItem="HP6-s0-dFL" firstAttribute="centerY" secondItem="Wxl-MO-tqN" secondAttribute="centerY" id="Rg6-iE-Ck7"/>
                                                 <constraint firstItem="61M-JH-nRy" firstAttribute="leading" secondItem="Wxl-MO-tqN" secondAttribute="leading" constant="3" id="TRS-vp-YvB"/>
+                                                <constraint firstItem="4vb-UA-K5f" firstAttribute="centerY" secondItem="Wxl-MO-tqN" secondAttribute="centerY" id="UDg-dk-mip"/>
                                                 <constraint firstItem="eeo-hP-X1T" firstAttribute="leading" secondItem="61M-JH-nRy" secondAttribute="trailing" constant="3" id="e4F-fk-0rl"/>
+                                                <constraint firstAttribute="trailing" secondItem="4vb-UA-K5f" secondAttribute="trailing" constant="5" id="gYD-u5-81b"/>
                                                 <constraint firstItem="eeo-hP-X1T" firstAttribute="centerY" secondItem="Wxl-MO-tqN" secondAttribute="centerY" id="m86-tQ-acO"/>
+                                                <constraint firstItem="HP6-s0-dFL" firstAttribute="leading" secondItem="kKG-Jg-lg8" secondAttribute="trailing" constant="5" id="xKJ-Fx-o37"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="StationTableViewCell"/>
