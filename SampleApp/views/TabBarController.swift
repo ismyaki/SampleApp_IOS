@@ -34,6 +34,12 @@ class TabBarController: UITabBarController {
             arr.append(vc)
         }
         
+        if let vc = UIStoryboard(name: "Tab3", bundle:nil).instantiateViewController(withClass: StationGridViewController.self) {
+            vc.tabBarItem =
+                UITabBarItem(title: "TAB3",image: UIImage(systemName: "bicycle.circle"),selectedImage: UIImage(systemName:"bicycle.circle"))
+            arr.append(vc)
+        }
+        
         // set view contriller
         self.viewControllers = arr
         // setting tab ber style

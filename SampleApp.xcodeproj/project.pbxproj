@@ -10,6 +10,12 @@
 		F162E286253FFDE40005A091 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F162E285253FFDE40005A091 /* SecondViewController.swift */; };
 		F162E28B253FFE580005A091 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F162E28A253FFE580005A091 /* Localizable.swift */; };
 		F187062126257721007CE4AF /* ScopeFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187062026257721007CE4AF /* ScopeFunc.swift */; };
+		F1969473268B6644002372B8 /* Tab3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1969472268B6644002372B8 /* Tab3.storyboard */; };
+		F1969476268B6671002372B8 /* StationGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1969475268B6671002372B8 /* StationGridViewController.swift */; };
+		F1969478268B6A5D002372B8 /* StationGridCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1969477268B6A5D002372B8 /* StationGridCollectionCell.swift */; };
+		F196947B268B6C6F002372B8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F196947A268B6C6F002372B8 /* SnapKit */; };
+		F1969483268B7FAB002372B8 /* HomeFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1969482268B7FAB002372B8 /* HomeFlowLayout.swift */; };
+		F1969485268C1E8C002372B8 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1969484268C1E8B002372B8 /* FlowLayout.swift */; };
 		F1E0A647253FD49C007BCD19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A646253FD49C007BCD19 /* AppDelegate.swift */; };
 		F1E0A649253FD49C007BCD19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A648253FD49C007BCD19 /* SceneDelegate.swift */; };
 		F1E0A64B253FD49C007BCD19 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A64A253FD49C007BCD19 /* SplashViewController.swift */; };
@@ -74,6 +80,11 @@
 		F162E285253FFDE40005A091 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F162E28A253FFE580005A091 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		F187062026257721007CE4AF /* ScopeFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeFunc.swift; sourceTree = "<group>"; };
+		F1969472268B6644002372B8 /* Tab3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab3.storyboard; sourceTree = "<group>"; };
+		F1969475268B6671002372B8 /* StationGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationGridViewController.swift; sourceTree = "<group>"; };
+		F1969477268B6A5D002372B8 /* StationGridCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationGridCollectionCell.swift; sourceTree = "<group>"; };
+		F1969482268B7FAB002372B8 /* HomeFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowLayout.swift; sourceTree = "<group>"; };
+		F1969484268C1E8B002372B8 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		F1E0A643253FD49B007BCD19 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E0A646253FD49C007BCD19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E0A648253FD49C007BCD19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E0A68A253FD599007BCD19 /* Kingfisher in Frameworks */,
+				F196947B268B6C6F002372B8 /* SnapKit in Frameworks */,
 				F1E0A67E253FD55A007BCD19 /* SwifterSwift in Frameworks */,
 				F1E0A684253FD57A007BCD19 /* Alamofire in Frameworks */,
 			);
@@ -147,6 +159,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1969474268B664C002372B8 /* tab3 */ = {
+			isa = PBXGroup;
+			children = (
+				F1969475268B6671002372B8 /* StationGridViewController.swift */,
+				F1969477268B6A5D002372B8 /* StationGridCollectionCell.swift */,
+				F1969482268B7FAB002372B8 /* HomeFlowLayout.swift */,
+				F1969484268C1E8B002372B8 /* FlowLayout.swift */,
+			);
+			path = tab3;
+			sourceTree = "<group>";
+		};
 		F1E0A63A253FD49B007BCD19 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +253,7 @@
 				F1F8940F25412B960032ACAC /* Tab.storyboard */,
 				F1F89422254132480032ACAC /* Tab1.storyboard */,
 				F1F89427254132690032ACAC /* Tab2.storyboard */,
+				F1969472268B6644002372B8 /* Tab3.storyboard */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -243,6 +267,7 @@
 				F1F8941425412C790032ACAC /* TabBarController.swift */,
 				F1F8941C2541315A0032ACAC /* tab1 */,
 				F1F8942F254133060032ACAC /* tab2 */,
+				F1969474268B664C002372B8 /* tab3 */,
 				F1E0A6DB253FE99E007BCD19 /* alert */,
 			);
 			path = views;
@@ -323,6 +348,7 @@
 				F1E0A67D253FD55A007BCD19 /* SwifterSwift */,
 				F1E0A683253FD57A007BCD19 /* Alamofire */,
 				F1E0A689253FD599007BCD19 /* Kingfisher */,
+				F196947A268B6C6F002372B8 /* SnapKit */,
 			);
 			productName = SampleApp;
 			productReference = F1E0A643253FD49B007BCD19 /* SampleApp.app */;
@@ -400,6 +426,7 @@
 				F1E0A67C253FD55A007BCD19 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
 				F1E0A682253FD57A007BCD19 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F1E0A688253FD599007BCD19 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F1969479268B6C6F002372B8 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = F1E0A644253FD49B007BCD19 /* Products */;
 			projectDirPath = "";
@@ -427,6 +454,7 @@
 				F1E0A6DE253FEAD1007BCD19 /* AlertTextViewController.xib in Resources */,
 				F1E0A653253FD4A2007BCD19 /* Assets.xcassets in Resources */,
 				F1E0A6CC253FE3DD007BCD19 /* Splash.storyboard in Resources */,
+				F1969473268B6644002372B8 /* Tab3.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,23 +485,27 @@
 				F1E0A6B6253FDB94007BCD19 /* StringExt.swift in Sources */,
 				F1E0A6B9253FDB94007BCD19 /* UIViewControllerExt.swift in Sources */,
 				F1E0A6A2253FD6C3007BCD19 /* ApiTool.swift in Sources */,
+				F1969483268B7FAB002372B8 /* HomeFlowLayout.swift in Sources */,
 				F1F89446254135A80032ACAC /* BaseViewController.swift in Sources */,
 				F1F8941525412C790032ACAC /* TabBarController.swift in Sources */,
 				F1E0A6C0253FDC5A007BCD19 /* CoreDataExt.swift in Sources */,
 				F1E0A69F253FD6C3007BCD19 /* LoginModel.swift in Sources */,
 				F1F894392541335E0032ACAC /* StationViewController.swift in Sources */,
 				F1E0A6A0253FD6C3007BCD19 /* TapipeiYouBikeStationModel.swift in Sources */,
+				F1969476268B6671002372B8 /* StationGridViewController.swift in Sources */,
 				F1E0A64B253FD49C007BCD19 /* SplashViewController.swift in Sources */,
 				F1E0A651253FD49C007BCD19 /* SampleApp.xcdatamodeld in Sources */,
 				F1E0A6B2253FDB94007BCD19 /* UserDefaultsManager.swift in Sources */,
 				F1F89431254133480032ACAC /* LoginViewController.swift in Sources */,
 				F187062126257721007CE4AF /* ScopeFunc.swift in Sources */,
 				F1E0A647253FD49C007BCD19 /* AppDelegate.swift in Sources */,
+				F1969485268C1E8C002372B8 /* FlowLayout.swift in Sources */,
 				F1E0A6BA253FDB94007BCD19 /* DateExt.swift in Sources */,
 				F1E0A6B8253FDB94007BCD19 /* Tools.swift in Sources */,
 				F1E0A6B5253FDB94007BCD19 /* NumberExt.swift in Sources */,
 				F1E0A6B7253FDB94007BCD19 /* UIColorExt.swift in Sources */,
 				F1E0A6DF253FEAD1007BCD19 /* AlertTextViewController.swift in Sources */,
+				F1969478268B6A5D002372B8 /* StationGridCollectionCell.swift in Sources */,
 				F1E0A6A1253FD6C3007BCD19 /* ApiService.swift in Sources */,
 				F1E0A6C1253FDC5A007BCD19 /* BikeStationManager.swift in Sources */,
 				F162E286253FFDE40005A091 /* SecondViewController.swift in Sources */,
@@ -816,6 +848,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F1969479268B6C6F002372B8 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		F1E0A67C253FD55A007BCD19 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
@@ -843,6 +883,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F196947A268B6C6F002372B8 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1969479268B6C6F002372B8 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		F1E0A67D253FD55A007BCD19 /* SwifterSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F1E0A67C253FD55A007BCD19 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
