@@ -9,7 +9,6 @@ import UIKit
 
 class FlowLayout: UICollectionViewFlowLayout {
     
-    var maxCount = 0
     var rowCount = 3
     var computeSize: ((_ index: Int) -> (CGSize))?
     var attributes = [UICollectionViewLayoutAttributes]()
@@ -52,7 +51,7 @@ class FlowLayout: UICollectionViewFlowLayout {
         attributes.removeAll()
         
         var row = 0
-        for index in 0..<maxCount {
+        for index in 0..<(self.collectionView?.numberOfItems() ?? 0) {
             // 建立一個attribute
             let indexPath = IndexPath.init(row: row, section: 0)
             let attribute = UICollectionViewLayoutAttributes(forCellWith: indexPath)

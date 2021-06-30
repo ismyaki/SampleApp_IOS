@@ -32,7 +32,6 @@ class StationGridViewController: BaseViewController {
         collectionView.apply {
             let layout = FlowLayout()
             layout.rowCount = 3
-            layout.maxCount = dataList.count
             layout.scrollDirection = .vertical
             layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
             layout.minimumLineSpacing = 10.0
