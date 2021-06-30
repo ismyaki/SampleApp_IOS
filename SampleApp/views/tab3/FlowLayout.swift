@@ -10,7 +10,7 @@ import UIKit
 class FlowLayout: UICollectionViewFlowLayout {
     
     var maxCount = 0
-    var column = 3
+    var rowCount = 3
     var computeSize: ((_ index: Int) -> (CGSize))?
     var attributes = [UICollectionViewLayoutAttributes]()
     
@@ -25,7 +25,7 @@ class FlowLayout: UICollectionViewFlowLayout {
         if self.collectionView != nil {
             // 根據想要的column數量來計算一個cell的寬度
             let contentWidth:CGFloat = self.collectionView!.bounds.size.width - sectionInset.left - sectionInset.right
-            let itemWidth = (contentWidth - minimumInteritemSpacing * (CGFloat(column)-1)) / CGFloat(column)
+            let itemWidth = (contentWidth - minimumInteritemSpacing * (CGFloat(rowCount)-1)) / CGFloat(rowCount)
             
             // 計算cell的佈局
             let cellSize = computeAndStoreAttributes(CGFloat(itemWidth))
@@ -43,10 +43,10 @@ class FlowLayout: UICollectionViewFlowLayout {
     fileprivate func computeAndStoreAttributes(_ itemWidth:CGFloat) -> CGSize {
         
         // 以sectionInset.top作為最初始的高度，紀錄每一個column的高度
-        var columnHeights = [CGFloat](repeating: sectionInset.top, count: column)
+        var columnHeights = [CGFloat](repeating: sectionInset.top, count: rowCount)
         
         // 記錄每一個column的item個數
-        var columnItemCount = [Int](repeating: 0, count: column)
+        var columnItemCount = [Int](repeating: 0, count: rowCount)
         
         // 紀錄每一個cell的attributes
         attributes.removeAll()
