@@ -31,7 +31,7 @@ class SplashViewController: BaseViewController {
             // Sync api finish, go to TabBarController or LoginViewController ...
             DispatchQueue.main.async {
                 self.dismiss(animated: false)
-                if UserDefaultsManager.getInstance().isLogin() {
+                if ud.isLogin() {
                     let storyboard = UIStoryboard.init(name: "Tab", bundle: nil)
                     if let next = storyboard.instantiateViewController(withClass: TabBarController.self) {
                         next.modalPresentationStyle = .fullScreen
@@ -51,9 +51,8 @@ class SplashViewController: BaseViewController {
     private func getApiTapieiYouBike() -> ApiError?{
         let response = ApiService.getTapieiYouBikeStation()
         if response.isSuccess {
-            let dao = BikeStationManager.getInstance()
-            let _ = dao.insert(dict: response.data?.retVal ?? [:])
-            dao.save()
+            let _ = db.bikeStation.insert(dict: response.data?.retVal ?? [:])
+            db.bikeStation.save()
         }
         return response.error
     }

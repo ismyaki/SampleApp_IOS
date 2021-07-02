@@ -25,7 +25,7 @@ class StationGridViewController: BaseViewController {
     }
     
     private func initData(){
-        dataList = BikeStationManager.getInstance().fetchAll()
+        dataList = db.bikeStation.fetchAll()
     }
     
     private func initView(){

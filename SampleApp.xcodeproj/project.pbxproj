@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F14B066C268EDA4D002AEF93 /* QuickType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B066B268EDA4D002AEF93 /* QuickType.swift */; };
 		F162E286253FFDE40005A091 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F162E285253FFDE40005A091 /* SecondViewController.swift */; };
 		F162E28B253FFE580005A091 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F162E28A253FFE580005A091 /* Localizable.swift */; };
 		F187062126257721007CE4AF /* ScopeFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F187062026257721007CE4AF /* ScopeFunc.swift */; };
@@ -76,6 +77,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F14B066B268EDA4D002AEF93 /* QuickType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickType.swift; sourceTree = "<group>"; };
 		F162E27E253FEE790005A091 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F162E285253FFDE40005A091 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F162E28A253FFE580005A091 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				F1E0A652253FD4A2007BCD19 /* Assets.xcassets */,
 				F1E0A657253FD4A2007BCD19 /* Info.plist */,
 				F1E0A64F253FD49C007BCD19 /* SampleApp.xcdatamodeld */,
+				F14B066B268EDA4D002AEF93 /* QuickType.swift */,
 			);
 			path = SampleApp;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				F1969485268C1E8C002372B8 /* FlowLayout.swift in Sources */,
 				F1E0A6BA253FDB94007BCD19 /* DateExt.swift in Sources */,
 				F1E0A6B8253FDB94007BCD19 /* Tools.swift in Sources */,
+				F14B066C268EDA4D002AEF93 /* QuickType.swift in Sources */,
 				F1E0A6B5253FDB94007BCD19 /* NumberExt.swift in Sources */,
 				F1E0A6B7253FDB94007BCD19 /* UIColorExt.swift in Sources */,
 				F1E0A6DF253FEAD1007BCD19 /* AlertTextViewController.swift in Sources */,

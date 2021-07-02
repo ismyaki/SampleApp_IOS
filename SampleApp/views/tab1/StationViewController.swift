@@ -13,7 +13,7 @@ class StationViewController: BaseViewController {
     @IBOutlet weak var tvStation: UITableView!
     
     private var dataList = [BikeStationEntity]()
-    private lazy var dataResults = { BikeStationManager.getInstance().fetchAllInLive() }()
+    private lazy var dataResults = { db.bikeStation.fetchAllInLive() }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class StationViewController: BaseViewController {
     }
     
     private func initData(){
-        dataList = BikeStationManager.getInstance().fetchAll()
+        dataList = db.bikeStation.fetchAll()
         log(TAG, "dataList.count \(dataList.count)")
         dataResults.delegate = self
     }
@@ -56,7 +56,7 @@ extension StationViewController: UITableViewDataSource, UITableViewDelegate, Sta
     
     func onClickCopy(_ view: UIView, selectEntity: BikeStationEntity) {
         let date = Date().toString("HH:mm:ss")
-        let _ = BikeStationManager.getInstance().insert(
+        let _ = db.bikeStation.insert(
             sno: (selectEntity.sno ?? "") + date,
             sna: (selectEntity.sna ?? "") + date,
             lat: selectEntity.lat,
@@ -64,12 +64,12 @@ extension StationViewController: UITableViewDataSource, UITableViewDelegate, Sta
             sbi: selectEntity.sbi.toInt(),
             tot: selectEntity.tot.toInt()
         )
-        BikeStationManager.getInstance().save()
+        db.bikeStation.save()
     }
     
     func onClickDel(_ view: UIView, selectEntity: BikeStationEntity) {
-        BikeStationManager.getInstance().remove(entity: selectEntity)
-        BikeStationManager.getInstance().save()
+        db.bikeStation.remove(entity: selectEntity)
+        db.bikeStation.save()
     }
     
 }

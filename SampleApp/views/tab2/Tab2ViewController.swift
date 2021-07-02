@@ -26,7 +26,7 @@ class Tab2ViewController: BaseViewController {
     }
     
     private func initData(){
-        dataList = BikeStationManager.getInstance().fetchAll()
+        dataList = db.bikeStation.fetchAll()
         log(TAG, "dataList.count is \(dataList.count)")
         dataList.forEach() {
             log(TAG, "\($0.sno ?? "") \($0.sna ?? "")")
